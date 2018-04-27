@@ -47,7 +47,7 @@ class CategoryController extends Controller
         $category->parent = $parent;
         $category->save();
 
-        $request->session()->flash('success', 'Task was successful!');
+        $request->session()->flash('success', 'Category added!');
 
         return redirect('/');
     }
